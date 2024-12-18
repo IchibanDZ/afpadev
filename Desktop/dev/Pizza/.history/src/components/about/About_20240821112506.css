@@ -1,0 +1,21 @@
+.card_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px;
+    align-items: center;
+}
+
+/* .DropButton {
+    display: flex;
+    align-items: row;
+    justify-content: space-between;
+    width: 33%;
+    height: 33%;
+} */
+
+.PrixAjout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

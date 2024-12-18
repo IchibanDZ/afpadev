@@ -1,0 +1,17 @@
+.tasksContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.tasksContainerTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tasksContainerTitleDate {
+    margin-top: -15px;
+}

@@ -1,0 +1,3 @@
+function isPalindrom (w) {
+     w = 
+}

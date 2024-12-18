@@ -1,0 +1,14 @@
+.jumbotron {
+    margin : 20px ; 
+    background-color: black;
+    color: grey;
+    border-radius: 10px;
+
+}
+
+/* .entete {
+    display: inline-block;
+    flex-direction: row;
+    text-align: end;
+    
+} */

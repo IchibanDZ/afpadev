@@ -1,0 +1,116 @@
+/* div {
+    display: flex;
+    justify-content: center;
+    
+}  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+}
+
+.valid {
+    border: 2px solid green;
+}
+
+.invalid {
+    border: 2px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+} */
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    height: 100vh;
+}
+
+.Submit1 {
+    display: flex;
+    justify-content: center;
+}
+
+/* label {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+} */
+#Nom , #Prénom , #Pseudo, #email , button {
+    width: 600px;
+    height: 25px;
+    margin-top: 20px;
+    
+}
+
+#message {
+    width: 600px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+button {
+    width: 100%;
+    background-color: rgb(45, 211, 45);
+    color: aliceblue;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+
+.valid {
+    border: 2px solid green;
+}
+
+.invalid {
+    border: 2px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+}

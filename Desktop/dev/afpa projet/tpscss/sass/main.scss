@@ -1,0 +1,8 @@
+@mixin color ($color:red, $size:3rem) {
+    font-size:$size;
+    color:$color;
+}
+
+h1 {
+    @include color;
+}

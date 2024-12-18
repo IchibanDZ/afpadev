@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fb25cd918e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="box">
+                <div class="music-controls">
+                    <button id="prevBtn"><i class="fa-solid fa-circle-left"></i></button>
+                    <button id="playBtn"><i class="fa-regular fa-circle-play"></i></button>
+                    <button id="nextBtn"><i class="fa-solid fa-circle-right"></i></button>
+                </div>
+                <div class="volume-controls">
+                    <button id="volumeDownBtn"><i class="fa-solid fa-volume-low"></i></button>
+                    <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5">
+                    <button id="volumeUpBtn"><i class="fa-solid fa-volume-high"></i></button>
+                </div>
+                <div class="sizeaudioplayer">
+                <audio id="audioPlayer" src="path_to_your_music_file.mp3"></audio>
+                </div>
+                </div>
+                <script src="script.js"></script>
+                <div class="boxmid1">
+                    <div class="boxmid">
+                        <div class="artist">
+                            <h1>Nom artiste</h1>
+                            <h2>Titre de la chanson</h2>
+                            <div class="positionvolume">
+                                <input type="range" id="volumeSlider2" min="0" max="1" step="0.01" value="0.5" >
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="volumeSlider1" placeholder="recherche">
+                    </div>
+                
+                </div>
+                
+            
+            
+            </div>
+          <div class="boxbottom">
+            <div class="box1">
+                <div class="navigation">
+                    <button class="btn">Music</button>
+                    <button class="btn">Vidéos</button>
+                    <button class="btn">Podcasts</button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="card"> 
+                    <div id="screen1" class="img"></div>
+                    <div class="txtbox">
+                        <h3>Titre</h3>
+                        <h4>Nom artiste</h4>
+                    </div>
+                    </div>
+                       
+                <div class="card">
+                    <div id="screen2" class="img"></div>
+                    <h3>Titre</h3>
+                    <h4>Nom artiste</h4>
+                </div>
+                <div class="card">
+                    <div id="screen3" class="img"></div>
+                    <h3>Titre</h3>
+                    <h4>Nom artiste</h4>
+                </div>
+                <div class="card">
+                    <div id="screen4" class="img"></div>
+                    <h3>Titre</h3>
+                    <h4>Nom artiste</h4>
+                </div>
+                <div class="card"> 
+                    <div id="screen5" class="img"></div>
+                    <h3>Titre</h3>
+                    <h4>Nom artiste</h4>
+                </div>
+                <div class="card">
+                    <div id="screen6" class="img"></div>
+                    <h3>Titre</h3>
+                    <h4>Nom artiste</h4>
+                </div>
+                <div class="card">
+                    <div id="screen7" class="img"></div>
+                    <h3>Titre</h3>
+                    <h4>Nom artiste</h4>
+                </div>
+                <div class="card">
+                    <div id="screen1" class="img"></div>
+                    <h3>Titre</h3>
+                    <h4>Nom artiste</h4>
+                </div>
+            </div>
+          </div>
+        
+    </div>
+</body>
+</html>

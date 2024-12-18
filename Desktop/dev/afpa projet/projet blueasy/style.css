@@ -1,0 +1,78 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4bcaff; /* Couleur de texte bleu */
+    margin: 0;
+    padding: 0;
+}
+
+*{border: solid; }
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-image: url(images/banniere.png);
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    height: 800px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);      /* Arrière-plan gris clair */
+    
+}
+
+.bloc {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.section2 {
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    line-height: 10px;
+    font-size: 25px;
+    text-align: center;
+    height: 700px;
+    gap: 20px;
+}
+
+.section3 {
+    background-color: rgba(0, 0, 0, 0.5);      /* Arrière-plan gris clair */
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    flex-direction: row;
+}
+
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #4bcaff; /* Liens bleus */
+    text-decoration: none;
+}
+
+.default-section {
+    background-color: #515f67; /* Arrière-plan gris clair */
+    margin: 20px auto;
+    padding: 20px;
+    width: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

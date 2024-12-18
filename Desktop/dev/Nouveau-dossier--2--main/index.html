@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger Nation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section class="top">
+      <header class="header_section">
+        <div class="container">
+          <nav>
+            <a href="" class="logo"
+              ><img src="./logo-BurgerNation.png" alt="logo BurgerNation"
+            /></a>
+            <button class="navbar-hamburger"><span></span></button>
+            <div class="menu">
+              <ul class="list">
+                <li><a href="#">La carte</a></li>
+                <li><a href="#">Nous</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+              <div class="bottomMenu">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="#" class="btn btn-yellow"
+                  ><i class="fa-solid fa-bag-shopping"></i> Click&Collect</a
+                >
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section class="slider">
+        <div class="carousel">
+          <div class="carousel-item active">
+            <div class="slide-image">
+              <h2>Fast Food Restaurant</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium quidem impedit quas excepturi nobis expedita ab ex.
+                Itaque fugit aperiam eligendi fugiat vero nihil voluptas.
+              </p>
+              <div class="btnyll">
+                <a href="#" class="btn btn-yellow">Commander</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slide-image">
+              <h2>C'est boooon</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium quidem impedit quas excepturi nobis expedita ab ex.
+                Itaque fugit aperiam eligendi fugiat vero nihil voluptas.
+              </p>
+              <div class="btnyll">
+                <a href="#" class="btn btn-yellow">Commander</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slide-image">
+              <h2>hmmmmmm</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium quidem impedit quas excepturi nobis expedita ab ex.
+                Itaque fugit aperiam eligendi fugiat vero nihil voluptas.
+              </p>
+              <div class="btnyll">
+                <a href="#" class="btn btn-yellow">Commander</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="slider-interface">
+          <button class="slider-dot" data-index="0"></button>
+          <button class="slider-dot" data-index="1"></button>
+          <button class="slider-dot" data-index="2"></button>
+        </nav>
+      </section>
+    </section>
+    <div class="cardContainer">
+    <div class="card1 text-left">
+      <img class="card-img-top" src="./images/o1.jpg" alt="">
+      <div class="card-body">
+        <h4 class="card-title"><p class="promo">Tasty Thursdays</p> <p class="Pourcent">20%</p> de réduction</h4>
+        <a href="#" class="btn btn-yellow">Je commande<i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
+      </div>
+    </div>
+    <div class="card2 text-left">
+      <img class="card-img-top" src="./images/o2.jpg" alt="">
+      <div class="card-body">
+        <h4 class="card-title"><p class="promo">Pizza Days</p> <p class="Pourcent">15%</p> de réduction</h4>
+        <a href="#" class="btn btn-yellow">Je commande <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
+      </div>
+    
+</div>
+<div class="button-container">
+  <button class="filter-button" data-filter="all">Tous</button>
+  <button class="filter-button" data-filter="burgers">Burgers</button>
+  <button class="filter-button" data-filter="pizzas">Pizzas</button>
+  <button class="filter-button" data-filter="pâtes">Pâtes</button>
+  <button class="filter-button" data-filter="frites">Frites</button>
+</div>
+<div class="app"></div>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

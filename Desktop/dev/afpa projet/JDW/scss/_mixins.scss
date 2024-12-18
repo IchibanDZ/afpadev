@@ -1,0 +1,6 @@
+@mixin cadre( $border:2px solid #000) {
+    border: $border ;
+    box-shadow: 10px 5px 10px 0px;
+    margin: 0px 30px 20px 30px;
+}
+

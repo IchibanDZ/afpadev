@@ -1,0 +1,249 @@
+/* Réinitialisations : annule les styles par défaut des navigateurs pour avoir un point de départ cohérent */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Inclut le padding et la bordure dans les dimensions des éléments */
+}
+*:focus {
+  outline: 3px dashed #228bec; /* Ajoute un contour visible pour les éléments en focus */
+  outline-offset: 0; /* Pas d'espacement entre le contour et l'élément */
+}
+html {
+  font: 62.5% / 1.15 sans-serif; /* Définit une base de 10px pour les tailles relatives (1rem = 10px) */
+}
+h1,
+h2 {
+  margin-bottom: 0; /* Supprime l'espacement par défaut sous les titres */
+}
+ul {
+  list-style: none; /* Supprime les puces par défaut des listes */
+  padding: 0; /* Supprime le padding interne des listes */
+}
+button {
+  /* Réinitialise les styles par défaut des boutons */
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  appearance: none; /* Supprime le style natif du bouton */
+}
+button::-moz-focus-inner {
+  border: 0; /* Supprime le contour interne par défaut des boutons sous Firefox */
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  /* Uniformise les styles des champs de formulaire */
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button,
+input {
+  overflow: visible; /* Permet le débordement du contenu */
+}
+input[type="text"] {
+  border-radius: 0; /* Supprime les coins arrondis */
+}
+body {
+  /* Style global du corps de la page */
+  width: 100%;
+  max-width: 68rem;
+  margin: 0 auto;
+  font: 1.6rem/1.25 Arial, sans-serif; /* Définit la police et la taille par défaut */
+  background-color: #f5f5f5; /* Couleur de fond */
+  color: #4d4d4d; /* Couleur du texte */
+}
+@media screen and (min-width: 620px) {
+  body {
+    font-size: 1.9rem; /* Augmente la taille du texte pour les écrans larges */
+    line-height: 1.31579;
+  }
+}
+/* Fin des réinitialisations */
+
+/* Styles globaux */
+.form-group > input[type="text"] {
+  display: inline-block;
+  margin-top: 0.4rem; /* Ajoute un léger espacement au-dessus des champs texte */
+}
+.btn {
+  /* Style de base des boutons */
+  padding: 0.8rem 1rem 0.7rem;
+  border: 0.2rem solid #4d4d4d;
+  cursor: pointer;
+  text-transform: capitalize; /* Transforme le texte en capitalisation */
+}
+.btn.toggle-btn {
+  border-width: 1px; /* Réduit la largeur de bordure */
+  border-color: #d3d3d3; /* Couleur de bordure */
+}
+.btn.toggle-btn[aria-pressed="true"] {
+  text-decoration: underline; /* Souligne le texte pour l'état actif */
+  border-color: #4d4d4d; /* Change la couleur de bordure */
+}
+.btn__danger {
+  color: #fff; /* Texte blanc */
+  background-color: #ca3c3c; /* Fond rouge */
+  border-color: #bd2130; /* Bordure rouge */
+}
+.btn__filter {
+  border-color: lightgrey; /* Bordure grise */
+}
+.btn__primary {
+  color: #fff; /* Texte blanc */
+  background-color: #000; /* Fond noir */
+}
+.btn-group {
+  display: flex; /* Aligne les boutons horizontalement */
+  justify-content: space-between; /* Ajoute un espace égal entre eux */
+}
+.btn-group > * {
+  flex: 1 1 49%; /* Chaque bouton occupe environ la moitié de la largeur */
+}
+.btn-group > * + * {
+  margin-left: 0.8rem; /* Ajoute un espacement horizontal entre les boutons */
+}
+.label-wrapper {
+  margin: 0;
+  flex: 0 0 100%;
+  text-align: center; /* Centre le texte */
+}
+.visually-hidden {
+  /* Cache les éléments visuellement tout en restant accessibles aux lecteurs d'écran */
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+[class*="stack"] > * {
+  margin-top: 0;
+  margin-bottom: 0; /* Supprime les marges verticales */
+}
+.stack-small > * + * {
+  margin-top: 1.25rem; /* Ajoute un espacement vertical entre les éléments */
+}
+.stack-large > * + * {
+  margin-top: 2.5rem; /* Espacement plus grand pour les éléments */
+}
+@media screen and (min-width: 550px) {
+  .stack-small > * + * {
+    margin-top: 1.4rem;
+  }
+  .stack-large > * + * {
+    margin-top: 2.8rem;
+  }
+}
+.stack-exception {
+  margin-top: 1.2rem; /* Marges spécifiques */
+}
+/* Fin des styles globaux */
+
+/* Styles spécifiques à l'application Todo */
+.todoapp {
+  background: #fff; /* Fond blanc */
+  margin: 2rem 0 4rem 0; /* Marges verticales */
+  padding: 1rem; /* Padding interne */
+  position: relative;
+  box-shadow: /* Ajoute une ombre pour l'effet de profondeur */
+    0 2px 4px 0 rgba(0, 0, 0, 0.2),
+    0 2.5rem 5rem 0 rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 550px) {
+  .todoapp {
+    padding: 4rem; /* Augmente le padding pour les écrans larges */
+  }
+}
+.todoapp > * {
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto; /* Centre les éléments */
+}
+.todoapp > form {
+  max-width: 100%; /* Formulaire occupant toute la largeur */
+}
+.todoapp > h1 {
+  display: block;
+  text-align: center; /* Centre le titre */
+  margin: 0 0 1rem; /* Supprime les marges supérieures */
+}
+.label__lg {
+  text-align: center; /* Centre le texte */
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+}
+.input__lg {
+  padding: 2rem; /* Ajoute de l'espace interne */
+  border: 2px solid #000; /* Bordure noire */
+}
+.input__lg:focus {
+  border-color: #4d4d4d;
+  box-shadow: inset 0 0 0 2px; /* Ombre interne */
+}
+[class*="__lg"] {
+  width: 100%; /* Largeur totale */
+  font-size: 1.9rem; /* Taille de police augmentée */
+}
+[class*="__lg"]:not(:last-child) {
+  margin-bottom: 1rem; /* Espacement sous les éléments sauf le dernier */
+}
+@media screen and (min-width: 620px) {
+  [class*="__lg"] {
+    font-size: 2.4rem; /* Police plus grande pour les écrans larges */
+  }
+}
+/* Styles des tâches */
+.todo {
+  display: flex;
+  flex-wrap: wrap; /* Autorise le retour à la ligne des éléments */
+}
+.todo > * {
+  flex: 0 0 100%; /* Chaque élément prend toute la largeur */
+}
+.todo-text {
+  width: 100%;
+  min-height: 4.4rem; /* Hauteur minimale */
+  padding: 0.4rem 0.8rem;
+  border: 2px solid #565656; /* Bordure grise */
+}
+.todo-text:focus {
+  box-shadow: inset 0 0 0 2px; /* Ombre interne */
+}
+/* Styles pour les cases à cocher */
+.c-cb {
+  display: block;
+  position: relative;
+  padding-left: 40px; /* Espace à gauche pour les icônes */
+}
+.c-cb > label::before {
+  content: "";
+  position: absolute;
+  border: 2px solid currentcolor; /* Bordure avec la couleur du texte */
+}
+.c-cb > input[type="checkbox"] {
+  position: static;
+  cursor: pointer; /* Pointeur survol */
+  opacity: 1; /* Rend la case invisible (seule l'icône reste visible) */
+  margin-right: 10px;
+}
+.c-cb > label::after {
+  content: "";
+  position: absolute;
+  border: solid;
+  transform: rotate(-45deg); /* Style de la coche */
+}
+.c-cb > input[type="checkbox"]:checked + label::after {
+  opacity: 1; /* Affiche la coche lorsque la case est cochée */
+}

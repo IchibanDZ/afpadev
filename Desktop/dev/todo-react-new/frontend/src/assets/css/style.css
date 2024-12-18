@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #ffffff;
+    color: #00002c;
+    font-family: Raleway;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #00002c;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    gap: 10px;
+    padding-bottom: 60px;
+}
+
+[type="checkbox"] {
+    height: 30px;
+    width: 30px;
+}
+
+/* ----------------------------  Page détail projet ------------------------------------------ */
+.containerGeneral {
+    width: 95%;
+    margin: auto;
+}
+
+.titrePage {
+    text-align: center;
+    font-size: 2em;
+}
+
+/* bloc description projet */
+
+.titreProjet {
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.bordureBloc {
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.divDescriptionProjet {
+    width: 90%;
+    margin: auto;
+}
+
+/* bloc liste taches projet */
+
+.bordureBloc2 {
+    margin: auto;
+    border: 1px solid #1464C7;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    box-shadow: 0 0 12px 1px rgba(128, 128, 128, 0.718);
+}
+
+.divBlocListeTaches {
+    width: 90%;
+    margin: auto;
+}
+
+.addTask {
+    height: 50px;
+    color: white;
+    background-color: #1464C7;
+    border: 1px solid #1464C7;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.add {
+    color: #1464C7;
+    background: none;
+    border: none;
+    padding: 5px;
+}
+
+.titreBoutonTask {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.UlListTask {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.radioBoutonLabel {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.labelBouton {
+    padding-right: 10px;
+}
+
+.icone-input-container {
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .emoji-button {
+    height: 50px; 
+    width: 300px;
+    padding: 0 20px;
+    font-size: 16px;
+    background-color: #1464C7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .emoji-button:hover {
+    background-color: #0d4fa3;
+  }
+  
+  .inputEmoji {
+    flex: 1;
+    margin-bottom: 0;
+    pointer-events: none; 
+    background-color: #f0f0f0; 
+  }
+
+/* ----------------------------  Page habits trackers ------------------------------------------ */
+
+.iconeHabits {
+    font-size: 1.5em;
+    padding-left: 6px;
+}
+
+.barreTracker {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #1464C7;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 1px rgba(128, 128, 128, 0.718);
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #4cc0ee;
+    margin-bottom: 20px;
+}
+
+.pHabits {
+    font-size: 1.2em;
+}
+
+.boutonHabits {
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+
+.containerBarre {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.boutonsBarre{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    width: 100%;
+    top: -13px;
+}
+
+.iconeUpdateDelete {
+width: 15px;
+height: 15px;
+border: 1px solid black;
+border-radius: 50%;
+padding: 5px;
+position: absolute;
+}
+
+.Ud1{
+background-color: lightgreen;
+left: 70%;
+}
+
+.Ud2{
+    background-color: lightsalmon;
+    left: 80%;
+}
+
+.Ud3{
+    background-color: lightcoral;
+    left: 90%;
+}
+
+.inputIsCompleted {
+    
+}
+
+/* ----------------------------  Page creer nouveau projet ------------------------------------------ */
+
+.generalProjet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.creerProjet {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 20px;
+}
+
+.inputNomProjet,
+.inputEmoji,
+.inputDescriptionProjet,
+.inputNomTask,
+.inputDescriptionTask,
+#selectProjet {
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease; 
+    box-shadow: 0 0 12px 1px rgba(128, 128, 128, 0.1);
+    border: none;
+    border-radius: 10px
+}
+
+.inputDescriptionProjet {
+    height: 50px;
+}
+
+.inputDescriptionTask {
+    height: 100px;
+}
+
+.labelTask {
+    margin-bottom: 10px;
+}
+
+.radioTask {
+    margin-top: 10px;
+}
+
+.optionTask {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.inputCategorie {
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease; 
+    box-shadow: 0 0 12px 1px rgba(128, 128, 128, 0.1);
+    border: none;
+    border-radius: 10px
+}
+
+.buttonTask {
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.buttonTaskActive {
+    background-color: #0091ca;
+    border-color: #0091ca;
+}
+/* ----------------------------  Page profile ------------------------------------------ */
+
+.generalProfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -100px;
+}
+
+.profilePic {
+    width: 150px;
+    border-radius: 50%;
+    background-color: #1464C7;
+    z-index: +1;
+    position: relative;
+    top: 80px;
+    margin: auto;
+    text-align: center;
+    object-fit: cover;
+    width: 120px;
+    height: 120px;
+}
+
+.profileBadge {
+    width: 40px;
+    height: 40px;
+}
+
+.topBox {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 80px;
+    border-radius: 15px;
+    box-shadow: 0 0 6px 1px rgba(128, 128, 128, 0.718);
+}
+
+.iconeBoxProfile {
+    width: 20px;
+    padding-top: 10px;
+}
+
+.topBoxMini {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.countBox,
+.countBox2 {
+    width: 33%;
+    border-top: solid 1px rgb(230, 230, 230);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.countBox2 {
+    border-right: none;
+}
+
+.bottomBox {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.barreProfil {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    /* box-shadow: 0 0 10px 1px rgba(128, 128, 128, 0.718); */
+    border-radius: 5px;
+}
+
+.profileLink {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: row;
+}
+/* ----------------------------  Page autres ------------------------------------------ */
+
+.carteH {
+    margin-bottom: 20px;
+}
+
+.carte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #1464C7;
+    border-radius: 15px;
+    box-shadow: 0 0 6px 1px rgba(128, 128, 128, 0.718);
+}
+
+.carteTitle {
+    background-color: #1464C7;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.imgCarte {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.description {
+    padding: 10px;
+    color: #00002c;
+}

@@ -1,0 +1,64 @@
+{
+    "pizzas": [
+        {
+            "name": "Deliciouos Pizza",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione harum ducimus delectus voluptatem mollitia nisi.",
+            "price": 20,
+            "imageUrl": "./images/f1.png"
+        },
+        {
+            "name": "Deliciouos Pizza",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione harum ducimus delectus voluptatem mollitia nisi.",
+            "price": 17,
+            "imageUrl": "./images/f3.png"
+        },
+        {
+            "name": "Deliciouos Pizza",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione harum ducimus delectus voluptatem mollitia nisi.",
+            "price": 15,
+            "imageUrl": "./images/f6.png"
+        }
+    ],
+    "burgers": [
+        {
+            "name": "Delicious Burger",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione harum ducimus delectus voluptatem mollitia nisi.",
+            "price": 15,
+            "imageUrl": "./images/f2.png"
+        },
+        {
+            "name": "Delicious Burger",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione harum ducimus delectus voluptatem mollitia nisi.",
+            "price": 12,
+            "imageUrl": "./images/f7.png"
+        },
+        {
+            "name": "Delicious Burger",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione harum ducimus delectus voluptatem mollitia nisi.",
+            "price": 14,
+            "imageUrl": "./images/f8.png"
+        }
+    ],
+    "pâtes": [
+        {
+            "name": "Delicious Pasta",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione harum ducimus delectus voluptatem mollitia nisi.",
+            "price": 18,
+            "imageUrl": "./images/f4.png"
+        },
+        {
+            "name": "Delicious Pasta",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione harum ducimus delectus voluptatem mollitia nisi.",
+            "price": 10,
+            "imageUrl": "./images/f9.png"
+        }
+    ],
+    "frites": [
+        {
+            "name": "French Fries",
+            "description": "Crispy golden fries with a light seasoning of salt.",
+            "price": 10,
+            "imageUrl": "./images/f5.png"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+%black-white {
+    color: white;
+    background-color: black;
+}
+
+%grey {
+    color: grey;
+}
+
+%orange {
+    background-color: rgba(255, 68, 0, 0.623);
+    color: white;
+    text-align: center;
+    margin-top: -20px;
+}
+
+%border {
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+%btn {
+    float: right;
+}

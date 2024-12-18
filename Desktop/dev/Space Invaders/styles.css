@@ -1,0 +1,10 @@
+body {
+    background-image: url(./img/espace.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="logo afpa.PNG" alt="logoafpa">
+        <div id="formulaire" class="fm">
+            <form>
+                <input type="text" id="name" name="name" placeholder="Nom Prénom">
+                <input type="email" id="email" name="email" placeholder="Courriel">
+                <input type="tel" id="phone" name="phone" placeholder="Téléphone">
+                <select id="status" name="status" aria-placeholder="Vous êtes...">
+                    <option value="student">Étudiant</option>
+                    <option value="professional">Professionnel</option>
+                    <option value="other">Autre</option>
+                </select>
+ 
+                <textarea id="comments" name="comments" placeholder="Commentaires"></textarea>
+        </div>
+        
+<div id="contact" class="ct"></div>
+            <div class="contact-method">
+                <p>Quelle est la meilleure manière de vous contacter ?</p>
+                <input type="radio" id="phone_contact" name="contact_method" value="phone">
+                <label for="phone_contact">Téléphone</label>
+                <input type="radio" id="email_contact" name="contact_method" value="email">
+                <label for="email_contact">Courriel</label>
+            </div>
+
+            <div class="availability">
+                <p>Jours de la semaine où vous êtes disponible :</p>
+                <input type="checkbox" id="monday" name="availability" value="monday">
+                <label for="monday">Lundi</label>
+                <input type="checkbox" id="tuesday" name="availability" value="tuesday">
+                <label for="tuesday">Mardi</label>
+                <input type="checkbox" id="wednesday" name="availability" value="wednesday">
+                <label for="wednesday">Mercredi</label>
+                <input type="checkbox" id="thursday" name="availability" value="thursday">
+                <label for="thursday">Jeudi</label>
+                <input type="checkbox" id="friday" name="availability" value="friday">
+                <label for="friday">Vendredi</label>
+            </div>
+
+            <div class="appointment-time">
+                <p>Heure appropriée pour un rendez-vous :</p>
+                <input type="checkbox" id="morning" name="appointment_time" value="morning">
+                <label for="morning">Matin</label>
+                <input type="checkbox" id="afternoon" name="appointment_time" value="afternoon">
+                <label for="afternoon">Après-midi</label>
+            </div>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+</body>
+</html>

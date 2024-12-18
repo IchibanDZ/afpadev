@@ -1,0 +1,295 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+p,
+ul,
+a {
+  font-family: "Roboto", sans-serif;
+}
+
+.top {
+  min-height: 100vh;
+  position: relative;
+  background-image: url("./bg-box.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.btn {
+  text-decoration: none;
+  padding: 8px 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  border-radius: 24px;
+}
+
+.btn-yellow {
+  color: #ffffff;
+  background-color: #ffbe33;
+  box-sizing: border-box;
+}
+
+.btn-yellow:hover {
+  background-color: #e69c00;
+}
+
+nav {
+  position: relative;
+  min-height: auto;
+}
+
+.header_section {
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+nav {
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-hamburger {
+  font-size: 1.25rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0;
+  width: 37px;
+  height: 42px;
+  transition: all 0.3s;
+}
+.navbar-hamburger span {
+  display: block;
+  width: 35px;
+  height: 4px;
+  background-color: #fafafa;
+  margin: 7px 0;
+  transition: all 0.3s;
+  position: relative;
+  border-radius: 5px;
+}
+
+.navbar-hamburger span::before,
+.navbar-hamburger span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  top: -10px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.navbar-hamburger span::after {
+  top: 10px;
+}
+
+.menu {
+  transition: max-height 0.8s linear;
+  overflow: hidden;
+  max-height: 0;
+  width: 100%;
+}
+
+.toggle {
+  max-height: 350px;
+}
+
+.list {
+  padding: 0;
+  text-align: center;
+}
+.list li:nth-child(even) {
+  margin: 7% 0;
+}
+
+.list a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.bottomMenu {
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.slider {
+  position: absolute;
+  color: #ffffff;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  width: 100%;
+}
+
+.carousel {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  background-color: #00000000;
+}
+
+.carousel-item .slide-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 50px;
+  width: 100%;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border: none;
+}
+
+.slide-image {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+h2,
+p {
+  width: 100%;
+  display: flex;
+}
+
+.carousel-item.active {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  left: 0;
+  transition: all 0.3s ease-out;
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  transform: translateY(-50%);
+}
+
+.slider-dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  border: none;
+}
+
+.slider-interface {
+  margin-top: 20px;
+  width: 100px;
+  background-color: #e69d0000;
+}
+
+.slider-dot.active {
+  width: 25px;
+  height: 25px;
+  background-color: #e69c00;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+.slider-icon {
+  font-size: 2.5rem;
+}
+
+.btnyll {
+  margin-top: 20px;
+}
+
+.cardContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  margin-top: 100px;
+  height: 90vh;
+}
+
+.card1,
+.card2 {
+  box-sizing: border-box;
+  width: 90%;
+  height: 100%;
+  background-color: #050505;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-img-top {
+  display: flex;
+  width: 50%;
+  margin-top: 20px;
+  border-radius: 50%;
+  border-color: #e69c00;
+  border: 2.5mm ridge rgb(218, 160, 0);
+}
+
+h4 {
+  color: #ffffff;
+}
+
+.card-body {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.card-title {
+  width: 100%;
+  text-align: center;
+ 
+}
+
+.promo, .Pourcent {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+
+}
+

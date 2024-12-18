@@ -1,0 +1,87 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 15px;
+}
+
+.homeTop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.homeTop a {
+    color: #2eaebf;
+}
+
+.homeTaskStateList {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.homeTaskStateActive {
+    background-color: #1464c7;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+}
+
+.homeTaskState {
+    background-color: #ffffff;
+    border: none;
+    color: grey;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+.homeBody {
+    background: linear-gradient(to bottom, white, lightblue);
+    height: 100vh;
+    margin: 0; 
+}
+
+.homePage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 150px;
+}
+
+.homeLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.homeDisconnectButton {
+    background-color: #3e8dec;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    font-weight: 600;
+}
+
+.homeCategoriesBox {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}

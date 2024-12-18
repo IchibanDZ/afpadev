@@ -1,0 +1,91 @@
+@use "./couleurs";
+@use "./typo";
+@use "./mixins";
+
+h2, h3, , button {
+    @extend %black-white;
+    @extend %border; 
+}
+
+button {
+    @extend %btn;
+}
+
+#span1, .page1 {
+@extend %black-white;
+}
+
+h2, h3, #date_du_jour {
+    @extend %upper ;
+}
+
+
+h4, #web {
+    @extend %grey;
+}
+
+.text-box {
+    @extend %orange;
+    
+}
+
+body {
+    background-image: url(../Ressources_Projet_JW_SASS/fond.webp);
+}
+
+body #span1, .page1{
+    float: right;
+    @extend %upper;
+    
+}
+
+.clear {
+    clear: both;
+}
+
+.Titreenca {
+    display: flex;
+    justify-content: flex-start;
+      #logo {
+        width: 30%;
+        img {
+            width: 100%;
+        }
+      }
+}
+
+#title-flex {
+    width: 70%;
+    font-size: medium;
+}
+
+.container {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.photo-card{
+float: left; }
+
+.box {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin: 10px;
+}
+
+.children {
+// box-sizing: border-box;
+// justify-content: space-around;
+}
+
+.card {
+    justify-content: space-around;
+    @include mixins.cadre ;
+    max-width: 350px;
+}
+
+hr {
+    transform: scaleX(0.6);
+}

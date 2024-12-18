@@ -1,0 +1,416 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #e4291c;
+    border-radius: 5px;
+    width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.header {
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+.content, .card {
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+   
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.box {
+    flex-direction: column;
+    display: flex;
+}
+
+.music-controls {
+    margin: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#playBtn {
+    width: 200px;
+}
+
+#nextBtn {
+    width: 120px;
+}
+
+#prevBtn {
+    width: 120px;
+}
+
+.volume-controls {
+    margin: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#volumeSlider {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#volumeDownBtn {
+    width: 70px;
+}
+
+#volumeUpBtn {
+    width: 70px;
+}
+
+.artist {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-weight: bold;
+}
+
+h1 {
+    font-weight: 550;
+    font-size: 3ch;
+    padding-left: 40px;
+}
+
+h2 {
+    font-weight: 50;
+    font-size: 2cap;
+    padding-left: 40px;
+}
+
+.positionvolume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#volumeSlider1{
+    width: 80%;
+    display: flex;
+
+}
+
+#volumeSlider2 {
+    width: 100%;
+} 
+
+.card {
+    flex-direction: column;
+    width: 40%;
+    color: rgb(75, 122, 197);
+    text-align: center;
+    font-weight: 10;
+    font-size: 15px;
+}
+
+/* .h3 {
+     font-weight: 10;
+    font-size: 20px;
+}
+
+.h4 {
+    font-weight: 10;
+    font-size: 15px;
+} */
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5%;
+    
+}
+
+.artist, .search-bar {
+    flex: 1;
+}
+
+.fa-magnifying-glass {
+    border: black;
+    border-style: solid;
+    border-width: 0.1px;
+    justify-content: space-around;
+}
+
+.btn {
+    color: blue;
+}
+
+.btn {text-align: left;
+    padding-left: 10px;
+}
+
+.img {
+    margin: 10px;
+    width: 85%;
+    aspect-ratio: 1/1;
+    background-size: contain;
+}
+
+#screen1 {
+    background-image: url(./img/pochettes/es/1.jpg);
+}
+
+#screen2 {
+    background-image: url(./img/pochettes/es/2.jpg);
+}
+
+#screen3 {
+    background-image: url(./img/pochettes/es/3.jpg);
+}
+
+#screen4 {
+    background-image: url(./img/pochettes/es/4.jpg);
+}
+
+#screen5 {
+    background-image: url(./img/pochettes/es/5.jpg);
+}
+
+#screen6 {
+    background-image: url(./img/pochettes/es/6.jpg);
+}
+
+#screen7 {
+    background-image: url(./img/pochettes/es/7.jpg);
+}
+
+
+
+@media only screen and (min-width: 600px) {
+
+#screen1 {
+    background-image: url(./img/pochettes/small/1.jpg);
+}
+
+#screen2 {
+    background-image: url(./img/pochettes/small/2.jpg);
+}
+
+#screen3 {
+    background-image: url(./img/pochettes/small/3.jpg);
+}
+
+#screen4 {
+    background-image: url(./img/pochettes/small/4.jpg);
+}
+
+#screen5 {
+    background-image: url(./img/pochettes/small/5.jpg);
+}
+
+#screen6 {
+    background-image: url(./img/pochettes/small/6.jpg);
+}
+
+#screen7 {
+    background-image: url(./img/pochettes/small/7.jpg);
+}
+#screen8 {
+    background-image: url(./img/pochettes/small/1.jpg);
+}
+
+.boxbottom {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.music-controls, .volume-controls {
+display: flex;
+justify-content: space-between;    
+
+}
+
+.box1 {
+padding-right: 20px;
+margin-top: 20px;
+}
+
+.btn {
+    height: 35px;
+}
+
+.boxmid1 {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    width: 100%;
+}
+
+.boxmid {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.search-bar {
+    box-sizing: border-box;
+    margin-bottom: -15px;
+}
+
+.artist {
+flex: 1;
+
+}
+
+h1  {
+    font-weight: 520;
+    font-size: 20px;
+    /* padding-left: 25px;
+    margin-top: -10px; */
+    height: 0%;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 15px;
+    /* padding-left: 25px;
+    margin-top: -10px; */
+    
+}
+#volumeSlider2 {
+    margin-top: -10px;
+}
+
+#volumeSlider1 {
+    width: 70%;
+    margin-right: 55px;
+}
+
+}
+
+@media only screen and (min-width: 768px) {
+    #screen1 {
+        background-image: url(./img/pochettes/medium/1.jpg);
+    }
+    
+    #screen2 {
+        background-image: url(./img/pochettes/medium/2.jpg);
+    }
+    
+    #screen3 {
+        background-image: url(./img/pochettes/medium/3.jpg);
+    }
+    
+    #screen4 {
+        background-image: url(./img/pochettes/medium/4.jpg);
+    }
+    
+    #screen5 {
+        background-image: url(./img/pochettes/medium/5.jpg);
+    }
+    
+    #screen6 {
+        background-image: url(./img/pochettes/medium/6.jpg);
+    }
+    
+    #screen7 {
+        background-image: url(./img/pochettes/medium/7.jpg);
+    }
+    #screen8 {
+        background-image: url(./img/pochettes/medium/1.jpg);
+    }
+     .header {
+        display: flex;
+        flex-direction: row;
+     }
+
+     .box , .search-bar {
+        width: 30%;
+     }
+
+     .artist {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: start;
+        
+     }
+     .search-bar {
+        box-sizing: border-box;
+        margin-top: -70px;
+        margin-right: -20px;
+    }
+
+   .card {
+    width: 30%;
+    justify-content: space-between;
+   }
+}
+
+@media only screen and (min-width: 992px) {
+    #screen1 {
+        background-image: url(./img/pochettes/large/1.jpg);
+    }
+    
+    #screen2 {
+        background-image: url(./img/pochettes/large/2.jpg);
+    }
+    
+    #screen3 {
+        background-image: url(./img/pochettes/large/3.jpg);
+    }
+    
+    #screen4 {
+        background-image: url(./img/pochettes/large/4.jpg);
+    }
+    
+    #screen5 {
+        background-image: url(./img/pochettes/large/5.jpg);
+    }
+    
+    #screen6 {
+        background-image: url(./img/pochettes/large/6.jpg);
+    }
+    
+    #screen7 {
+        background-image: url(./img/pochettes/large/7.jpg);
+    }
+    #screen8 {
+        background-image: url(./img/pochettes/large/1.jpg);
+    }
+
+    .card {
+        box-sizing: border-box;
+        width: 20%;
+        justify-content: space-between;
+       }
+
+       /* .txtbox {
+        height: 40%;
+       } */
+}
